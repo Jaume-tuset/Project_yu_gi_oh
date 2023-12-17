@@ -1,0 +1,61 @@
+body{
+  background-image: url("https://gmlzjxsypdgmyloaxoze.supabase.co/storage/v1/object/public/imagenes/tapetes/tapete05.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* styles video */
+.slider-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-block__video{
+  margin: 10px auto; 
+  width: 185vmin;
+  height: 32vmax;
+  padding: 1%;
+}
+
+.title-block {
+  margin: 20px auto;
+  text-align:center;
+  background: radial-gradient(circle, rgba(0,0,1,1) 0%, rgba(118,118,119,1) 0%, rgba(0,0,1,1) 95%);
+  padding: 2%; 
+}
+
+.title-block__heading {
+  font-size: 3em;
+  color: #333; 
+}
+
+.title-block__description {
+  padding: 1%;
+  font-size: 2em;
+  color: #cacaca;
+}
+div .botonPlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 20%;
+  margin: 30px auto;
+}
+
+.botonPlay {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  background: radial-gradient(circle, rgba(0, 0, 1, 1) 0%, rgba(118, 118, 119, 1) 0%, rgba(0, 0, 1, 1) 95%);
+  transition: background 0.3s;
+}
+
+/* Estilos adicionales al pasar el ratón sobre el botón para hacerlo más interactivo */
+.botonPlay:hover {
+  background: radial-gradient(circle, rgba(0, 0, 1, 1) 0%, rgba(80, 80, 81, 1) 0%, rgba(0, 0, 1, 1) 95%);
+}

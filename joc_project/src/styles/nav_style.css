@@ -1,104 +1,100 @@
-/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
   font-family: "Montserrat", serif;
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
 
-button,
-.btn {
-  font-family: inherit;
-}
-
-/* NAVIGATION BAR */
-
 nav {
+  background: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
-  padding: 0.75rem 5vw;
+  font-size: 7px;
+  padding: 3px 5vw;
   box-shadow: 0 0 30px lightgray;
 }
 
-nav img {
-  width: 400px;
-  height: 150px;
+div img {
+  width: 300px;
+  height: 80px;
+}
+
+#img_perfil {
+  width: 60px;
+  height: 50px;
+  display: block;
+  margin-bottom: -30%;
 }
 
 nav p {
-  font-size: 25px;
-  font-weight: 600;
-  cursor: default;
+  font-size: 35px;
+  font-weight: 600px;
+  display: flex;
+  align-items: center;
 }
 
 nav li {
-  display: flex;
+  width: 850px;
+  display: inline-block;
   align-items: center;
   list-style: none;
 }
 
 nav a {
   text-decoration: none;
-  color: #676767;
+  color: white;
   padding: 0 1rem;
   transition: 0.1s ease-in-out;
-  font-size: 20px;
+  font-size: 27px;
+  display: inline-block;
 }
+
 nav a:hover {
-  color: #121212;
+  color: #fff;
 }
 
 nav .btn {
   padding: 0.5rem 1rem;
   margin: 0 0 0 0.5rem;
-  border: 1px solid #4caf50;
+  border: 2px solid black;
   border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
+  font-weight: 900;
   transition: 0.2s ease-in-out;
-  font-size: 17px;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
 }
 
-.register{
-  background-color: #4caf50;
+.register {
+  background-color: transparent;
   color: white;
-  border: 1px solid #4caf50;
-  border-radius: 5px;
 }
 
 .register:hover {
-  background-color: #3c8c40;
-}
-
-.login {
   background-color: white;
-  color: #4caf50;
-}
-
-.login:hover {
-  background-color: #4caf50;
-  color: white;
-  border: 1px solid #4caf50;
+  color: black;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
+.login {
+  background-color: black;
+  color: white;
+}
+
+.login:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}

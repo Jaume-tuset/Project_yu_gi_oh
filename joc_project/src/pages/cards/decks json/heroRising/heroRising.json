@@ -1,0 +1,21 @@
+{
+    "Hero Rising": {
+      "Lista de cartas": [
+        { "1": "x1", "Nombre": "Wroughtweiler", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "2": "x1", "Nombre": "Elemental HERO Heat", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "3": "x2", "Nombre": "Elemental HERO Lady Heat", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "4": "x1", "Nombre": "Elemental HERO Voltic", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "5": "x1", "Nombre": "Elemental HERO Flash", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "6": "x1", "Nombre": "Elemental HERO Blazeman", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "7": "x1", "Nombre": "Polymerization", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "8": "x1", "Nombre": "Fusion Recovery", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "9": "x1", "Nombre": "H - Heated Heart", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "10": "x1", "Nombre": "HERO's Bond", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "11": "x1", "Nombre": "A Hero Emerges", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "12": "x2", "Nombre": "Hero Barrier", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "13": "x1", "Nombre": "Elemental Recharge", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "14": "x2", "Nombre": "Elemental HERO Inferno", "Tipo": "Fusion/Effect", "Rareza": "Unknown" }
+      ]
+    }
+  }
+  

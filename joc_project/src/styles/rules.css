@@ -1,0 +1,57 @@
+/* styles/rules.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.rules-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #3366cc;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+ol {
+    counter-reset: custom-counter;
+}
+
+ol li {
+    counter-increment: custom-counter;
+    margin-bottom: 5px;
+}
+
+ol li:before {
+    content: counter(custom-counter) ".";
+    font-weight: bold;
+    margin-right: 5px;
+    color: #3366cc;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
+
+/* Add more styles as needed */

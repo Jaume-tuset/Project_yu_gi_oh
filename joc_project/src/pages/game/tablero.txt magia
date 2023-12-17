@@ -1,0 +1,90 @@
+import '../../styles/tablero.css';
+import { listCharacters } from '../personajes/characters';
+import { Player } from './player';
+
+const tablero = (namePlayer1, playerDeck1, namePlayer2, playerDeck2) => {
+  const tableroDiv = document.createElement('div');
+  tableroDiv.id = 'divTablero';
+
+  function findCharacterImage(characterName) {
+    const character = listCharacters.find((character) => character.name === characterName);
+    return character ? character.img : '';
+  }
+
+  let selectCharacterImage1 = findCharacterImage(namePlayer1);
+  let player1 = new Player(namePlayer1, playerDeck1, selectCharacterImage1, 4000);
+  
+  let selectCharacterImage2 = findCharacterImage(namePlayer2);
+  let player2 = new Player(namePlayer2, playerDeck2, selectCharacterImage2, 4000);
+
+  console.log(player1);
+  console.log(player2);
+
+  tableroDiv.innerHTML = `
+    <div>
+      <table class="tablero1">
+        <tr>
+          <th class="player-info" id="playerInfo-${namePlayer1}">
+            <img src="${selectCharacterImage1}" alt="${namePlayer1}">
+            <div>
+              <h4>${player1.getNombre()}</h4>
+              <p>${player1.getVida()}<p>
+              <div class="player-mazo">
+                <p>${playerDeck1}</p>
+              </div>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <td class="mazo"> </td>
+          <td class="magic"> </td>
+          <td class="magic"> </td>
+          <td class="magic"> </td>
+          <td class="fusion"> </td>
+        </tr>
+        <tr>
+          <td class="death"> </td>
+          <td class="monster"> </td>
+          <td class="monster"> </td>
+          <td class="monster"> </td>
+          <td class="camp"> </td>
+        </tr>
+      </table>
+    </div>
+    <div class="session">  </div>
+    <div>
+      <table class="tablero2">
+        <tr>
+          <td class="camp"> </td>
+          <td class="monster"> </td>
+          <td class="monster"> </td>
+          <td class="monster"> </td>
+          <td class="death"> </td>
+        </tr>
+        <tr>
+          <td class="fusion"> </td>
+          <td class="magic"> </td>
+          <td class="magic"> </td>
+          <td class="magic"> </td>
+          <td class="mazo"> </td>
+        </tr>
+        <tr>
+          <th class="player-info" id="playerInfo-${namePlayer2}">
+            <img src="${selectCharacterImage2}" alt="${namePlayer2}">
+            <div>
+              <h4>${namePlayer2}</h4>
+              <p>${player2.getVida()}<p>
+              <div class="player-mazo">
+                <p>${playerDeck2}</p>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </table>
+    </div>
+  `;
+
+  return tableroDiv;
+};
+
+export { tablero };

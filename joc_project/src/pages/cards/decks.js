@@ -1,0 +1,174 @@
+import '../../styles/decks.css';
+
+import { listArrayDecks } from './listaDecks.js';
+import { myMaze } from './functions/mymaze.js';
+import { newMaze } from './functions/newmaze.js';
+import { editMaze } from './functions/editmaze.js';
+
+export { decks };
+
+const decks = () => {
+    let decks = document.createElement("div");
+    decks.className = "decks";
+
+    let containerFunctions = document.createElement("div");
+    containerFunctions.classList.add("containerFunctions");
+
+    let yourMaze = document.createElement("button");
+    yourMaze.classList.add("yourMaze");
+    yourMaze.textContent = "Mi Mazo";
+    yourMaze.addEventListener("click", (e) => {
+        e.preventDefault();
+        myMaze();
+        window.location.href = "#/myMaze";
+    });
+
+    let createDeck = document.createElement("button");
+    createDeck.classList.add("newDeck");
+    createDeck.textContent = "Crear Mazo";
+    createDeck.addEventListener("click", (e) => {
+        e.preventDefault();
+        newMaze();
+        window.location.href = "#/newDeck";
+    });
+
+    let editDeck = document.createElement("button");
+    editDeck.textContent = "Editar Mazo";
+    editDeck.classList.add("editDeck");
+    editDeck.addEventListener("click", (e) => {
+        e.preventDefault();
+        editMaze();
+        window.location.href = "#/editDeck";
+    });
+
+    let modifyCharacter = document.createElement("button");
+    modifyCharacter.textContent = "Perfil";
+    modifyCharacter.classList.add("modifyPerfil");
+    
+
+    let listDecks = document.createElement("button");
+    listDecks.textContent = "Lista Decks";
+    listDecks.classList.add("listDecks");
+    listDecks.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.location.href = "#/decks";
+    });
+
+    let deckContainer = document.createElement('div');
+    deckContainer.classList.add("deckContainer");
+
+    for (let i = 0; i < listArrayDecks.length; i++) {
+        let deck = listArrayDecks[i];
+
+        let deckItem = document.createElement("a");
+        deckItem.classList.add("deckItem");
+        deckItem.href = `#/${deck.href}`;
+
+        deckItem.addEventListener("click", (e) => {
+            e.preventDefault();
+            loadDeckPage(deck);
+        });
+
+        let deckImage = document.createElement("img");
+        deckImage.classList.add("deckImage");
+        deckImage.src = deck.img;
+        deckImage.alt = " ";
+
+        let deckInfo = document.createElement("div");
+        deckInfo.classList.add("deckInfo");
+        deckInfo.textContent = deck.context;
+
+        let deckName = document.createElement("h4");
+        deckName.classList.add("deckName");
+        deckName.textContent = deck.name;
+
+        deckItem.appendChild(deckImage);
+        deckItem.appendChild(deckInfo);
+        deckItem.appendChild(deckName);
+
+        deckContainer.appendChild(deckItem);
+    }
+
+    containerFunctions.appendChild(yourMaze);
+    containerFunctions.appendChild(createDeck);
+    containerFunctions.appendChild(editDeck);
+    containerFunctions.appendChild(modifyCharacter);
+    containerFunctions.appendChild(listDecks);
+    decks.appendChild(containerFunctions);
+    decks.appendChild(deckContainer);
+
+    return decks;
+};
+
+const loadDeckPage = async (deck, page = 1, itemsPerPage = 20) => {
+    try {
+        const response = await fetch(deck.fetch);
+        const data = await response.json();
+
+        const deckContainer = document.createElement("div");
+        deckContainer.classList.add("fetchDeckContainer");
+
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const currentData = data.data.slice(startIndex, endIndex);
+
+        currentData.forEach(card => {
+            const cardElement = document.createElement("div");
+            cardElement.classList.add("card");
+
+            const cardImage = document.createElement("img");
+            cardImage.classList.add("cardImage");
+            cardImage.src = card.card_images[0].image_url;
+            cardImage.alt = card.name;
+
+            const cardType = document.createElement("p");
+            cardType.classList.add("cardType");
+            cardType.textContent = card.type;
+
+            cardElement.appendChild(cardImage);
+            deckContainer.appendChild(cardElement);
+        });
+
+        history.pushState({}, '', `#/${deck.href}?page=${page}`);
+
+        const decksContainers = document.querySelector(".deckContainer");
+        decksContainers.innerHTML = '';
+        decksContainers.appendChild(deckContainer);
+
+        const paginationButtons = document.createElement('div');
+        paginationButtons.classList.add('paginationButtons');
+
+        const numPaginationButtons = document.createElement("button");
+        numPaginationButtons.classList.add('numPagination');
+        numPaginationButtons.innerHTML = `${page}`;
+
+        const numFinalPaginationButtons = document.createElement("button");
+        numFinalPaginationButtons.classList.add('numFinalPagination');
+        const totalPages = Math.ceil(data.data.length / itemsPerPage);
+        numFinalPaginationButtons.innerHTML = `${totalPages}`;
+
+        const previousButton = document.createElement('button');
+        previousButton.textContent = 'Anterior';
+        previousButton.addEventListener('click', () => loadDeckPage(deck, page - 1));
+        if (page === 1) {
+            previousButton.disabled = true;
+        }
+
+        const nextButton = document.createElement('button');
+        nextButton.textContent = 'Siguiente';
+        nextButton.addEventListener('click', () => loadDeckPage(deck, page + 1));
+        if (page === totalPages) {
+            nextButton.disabled = true;
+        }
+
+        paginationButtons.appendChild(previousButton);
+        paginationButtons.appendChild(numPaginationButtons);
+        paginationButtons.appendChild(numFinalPaginationButtons);
+        paginationButtons.appendChild(nextButton);
+
+        decksContainers.appendChild(paginationButtons);
+
+    } catch (error) {
+        console.error('Error al obtener los datos:', error);
+    }
+};

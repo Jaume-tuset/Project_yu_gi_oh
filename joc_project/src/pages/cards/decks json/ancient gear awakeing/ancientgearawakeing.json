@@ -1,0 +1,25 @@
+{
+    "Ancient Gear Awakeing": {
+      "Lista de cartas": [
+        { "1": "x1", "Nombre": "Ancient Gear Golem - Ultimate Pound", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "2": "x1", "Nombre": "Ancient Gear Reactor Dragon", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "3": "x1", "Nombre": "Ancient Gear Hydra", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "4": "x1", "Nombre": "Ancient Gear Wyvern", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "5": "x1", "Nombre": "Ancient Gear Frame", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "6": "x1", "Nombre": "Shreddder", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "7": "x2", "Nombre": "Mechanicalchaser", "Tipo": "Normal", "Rareza": "Unknown" },
+        { "8": "x1", "Nombre": "Planet Pathfinder", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "9": "x1", "Nombre": "Minefieldriller", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "10": "x1", "Nombre": "Geartown", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "11": "x1", "Nombre": "Ancient Gear Fortress", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "12": "x1", "Nombre": "Double Cyclone", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "13": "x1", "Nombre": "Air Cracking Storm", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "14": "x1", "Nombre": "Different Dimension Gate", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "15": "x1", "Nombre": "Iron Call", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "16": "x1", "Nombre": "Wild Tornado", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "17": "x1", "Nombre": "Magnet Force", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "18": "x1", "Nombre": "Machine King - 3000 B.C.", "Tipo": "Trap", "Rareza": "Unknown" }
+      ]
+    }
+  }
+  

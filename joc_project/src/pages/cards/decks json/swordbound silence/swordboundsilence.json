@@ -1,0 +1,23 @@
+{
+    "Sword Bound Silence": {
+      "Lista de cartas": [
+        { "1": "x1", "Nombre": "Silent Swordsman", "Tipo": "Special Summon/Effect", "Rareza": "Unknown" },
+        { "2": "x1", "Nombre": "Silent Swordsman LV7", "Tipo": "Special Summon/Effect", "Rareza": "Unknown" },
+        { "3": "x1", "Nombre": "Silent Swordsman LV5", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "4": "x2", "Nombre": "Silent Swordsman LV3", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "5": "x1", "Nombre": "Ignoble Knight of Black Laundsallyn", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "6": "x1", "Nombre": "Noble Knight Gawayn", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "7": "x2", "Nombre": "Noble Knight Artorigus", "Tipo": "Normal", "Rareza": "Unknown" },
+        { "8": "x2", "Nombre": "Dark Blade", "Tipo": "Normal", "Rareza": "Unknown" },
+        { "9": "x1", "Nombre": "Future Samurai", "Tipo": "Gemini/Effect", "Rareza": "Unknown" },
+        { "10": "x1", "Nombre": "Silent Sword Slash", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "11": "x1", "Nombre": "Noble Arms - Gallatin", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "12": "x1", "Nombre": "Noble Arms - Caliburn", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "13": "x1", "Nombre": "Level Up!", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "14": "x1", "Nombre": "Exchange of Night and Day", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "15": "x2", "Nombre": "Desperate Tag", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "16": "x1", "Nombre": "Beckoning Light", "Tipo": "Trap", "Rareza": "Unknown" }
+      ]
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "SpellBound Silence": {
+      "Lista de cartas": [
+        { "1": "x1", "Nombre": "Silent Magician", "Tipo": "Special Summon/Effect", "Rareza": "Unknown" },
+        { "2": "x1", "Nombre": "Silent Magician LV8", "Tipo": "Special Summon/Effect", "Rareza": "Unknown" },
+        { "3": "x3", "Nombre": "Silent Magician LV4", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "4": "x1", "Nombre": "Magical Exemplar", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "5": "x2", "Nombre": "Maiden of Macabre", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "6": "x2", "Nombre": "Alchemist of Black Spells", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "7": "x2", "Nombre": "Blast Magician", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "8": "x1", "Nombre": "Gold Sarcophagus", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "9": "x1", "Nombre": "Silent Burning", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "10": "x1", "Nombre": "Magical Citadel of Endymion", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "11": "x1", "Nombre": "Level Up!", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "12": "x1", "Nombre": "Level Modulation", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "13": "x1", "Nombre": "Good Goblin Housekeeping", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "14": "x2", "Nombre": "Pitch-Black Power Stone", "Tipo": "Trap", "Rareza": "Unknown" }
+      ]
+    }
+  }
+  

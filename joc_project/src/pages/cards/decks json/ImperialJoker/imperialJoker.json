@@ -1,0 +1,21 @@
+{
+    "Imperial Joker": {
+      "Lista de cartas": [
+        { "1": "x1", "Nombre": "Arcana Triumph Joker", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "2": "x1", "Nombre": "Imperial Bower", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "3": "x2", "Nombre": "Noble Knight Gawayn", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "4": "x2", "Nombre": "King's Knight", "Tipo": "Effect", "Rareza": "Unknown" },
+        { "5": "x2", "Nombre": "Noble Knight Artorigus", "Tipo": "Normal", "Rareza": "Unknown" },
+        { "6": "x2", "Nombre": "Jack's Knight", "Tipo": "Normal", "Rareza": "Unknown" },
+        { "7": "x2", "Nombre": "Queen's Knight", "Tipo": "Normal", "Rareza": "Unknown" },
+        { "8": "x1", "Nombre": "Fusion Gate", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "9": "x1", "Nombre": "Joker's Straight", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "10": "x1", "Nombre": "Face Card Fusion", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "11": "x1", "Nombre": "Painful Decision", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "12": "x2", "Nombre": "The Claw of Hermos", "Tipo": "Spell", "Rareza": "Unknown" },
+        { "13": "x2", "Nombre": "Beckoning Light", "Tipo": "Trap", "Rareza": "Unknown" },
+        { "14": "x1", "Nombre": "Arcana Knight Joker", "Tipo": "Fusion/Effect", "Rareza": "Unknown" }
+      ]
+    }
+  }
+  
